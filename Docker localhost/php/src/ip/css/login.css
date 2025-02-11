@@ -1,0 +1,75 @@
+/* --- พื้นหลัง Gradient ไล่สีส้ม-ม่วง --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff8a00, #8e44ad);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* --- กล่องล็อกอินแบบ Glassmorphism --- */
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+/* --- ปรับ Input และ Button ให้มีขนาดเท่ากัน --- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input, button {
+   
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* --- Input Box แบบนูน Neumorphism --- */
+input {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), 
+                inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+    width: 300px;
+}
+input:focus {
+    box-shadow: 0 0 10px #ff8a00, 0 0 20px #8e44ad; /* Glow Effect */
+    border: 2px solid #ff8a00;
+}
+
+/* --- ปุ่ม Login แบบ Gradient + Neumorphism --- */
+button {
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff8a00, #8e44ad);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 
+                -2px -2px 5px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}

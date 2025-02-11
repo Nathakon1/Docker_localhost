@@ -1,0 +1,92 @@
+/* 📌 สไตล์หลักของ Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff; /* พื้นหลังสีขาว */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงาเบาๆ เพิ่มมิติ */
+    text-align: center;
+    border: 1px solid #ddd; /* เส้นขอบบางๆ */
+}
+
+/* 📌 หัวข้อ */
+h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 📌 Label ของฟอร์ม */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
+}
+
+/* 📌 Input, Select และ Textarea */
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8f9fa;
+    transition: 0.3s;
+}
+
+select:focus, input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* 📌 ปุ่มกด */
+button[type="submit"] {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+/* 📌 ปิดการใช้งานปุ่ม */
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* 📌 ตกแต่ง Textarea */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* 📌 ข้อความแจ้งเตือน */
+#statusMessage {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+    margin-top: 15px;
+}
+
+.review-head{
+    padding-top: 10px;
+    padding-left: 10px;
+}

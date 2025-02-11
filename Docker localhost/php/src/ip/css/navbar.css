@@ -1,0 +1,67 @@
+/* css/navbar.css */
+
+.navbar {
+  background-color: #FF6F00;
+  padding: 10px 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.nav-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-expanded {
+  background-color: #FF6F00;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav-expanded.show {
+  max-height: 500px;
+}
+
+.expanded-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.expanded-item {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.expanded-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
