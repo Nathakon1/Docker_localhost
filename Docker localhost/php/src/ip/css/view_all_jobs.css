@@ -1,8 +1,0 @@
-.main-content{
-    display: flex;
-    flex-direction: column;
-    
-}
-.content {
-    flex: 1; /* ทำให้ main ขยายเต็มพื้นที่ที่เหลือ */
-}
